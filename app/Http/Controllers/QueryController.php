@@ -32,4 +32,11 @@ class QueryController extends Controller
         return view('pages.delete');
     }
 
+    public function eloquentPluck(){
+        $title = "Lista de usuarios para Select (PLUCK)";
+        $users = User::OrderBy('name', 'ASC')->pluck('name', 'id');
+
+        return view('query.pluck', compact('title', 'users'));
+    }
+
 }

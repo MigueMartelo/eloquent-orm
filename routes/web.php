@@ -36,3 +36,8 @@ Route::delete('/delete/{id}', [
     'uses' => 'QueryController@eloquentDelete'
 ]);
 
+Route::get('/pluck', [
+    'as' => 'pluck',
+    'uses' => 'QueryController@eloquentPluck'
+]);
+

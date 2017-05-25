@@ -24,5 +24,10 @@
                 Lista de usuarios (GET con array)
             </a>
         </li>
+        <li>
+            <a href="{{ route('pluck') }}">
+                Lista de usuarios para Select (PLUCK)
+            </a>
+        </li>
     </ul>
 </li>
