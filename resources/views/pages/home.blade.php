@@ -1,5 +1,10 @@
 @extends('layout')
 
 @section('content')
-	Página del home
+	<div class="jumbotron">
+        <div class="container">
+            <h1>Curso Eloquent ORM</h1>
+            <p>Texto</p>
+        </div>
+    </div>
 @stop
