@@ -22,35 +22,12 @@
                     <li>
                         <a href="{{ route('home') }}">Home</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Consultas Eloquent
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="{{ route('all') }}">
-                                    Todos los usuarios (ALL)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('get', 'f') }}">
-                                    Lista de usuarios femeninos (GET)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('get', 'm') }}">
-                                    Lista de usuarios masculinos (GET)
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    @include('partials.menu-query')
                 </ul>
             </div>
         </nav>        
         
         @yield('content')
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
