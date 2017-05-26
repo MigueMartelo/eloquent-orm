@@ -25,8 +25,8 @@
             </a>
         </li>
         <li>
-            <a href="{{ route('pluck') }}">
-                Lista de usuarios para Select (PLUCK)
+            <a href="{{ route('first-last') }}">
+                Primer y último registro (FIRST - LAST)
             </a>
         </li>
     </ul>

@@ -41,3 +41,8 @@ Route::get('/pluck', [
     'uses' => 'QueryController@eloquentPluck'
 ]);
 
+Route::get('/first-last', [
+    'as' => 'first-last',
+    'uses' => 'QueryController@eloquentFirstLast'
+]);
+

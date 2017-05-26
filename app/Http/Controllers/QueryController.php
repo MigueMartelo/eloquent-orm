@@ -39,4 +39,13 @@ class QueryController extends Controller
         return view('query.pluck', compact('title', 'users'));
     }
 
+    public function eloquentFirstLast(){
+        $title = "Primer y último registro (FIRST - LAST)";
+        $first = User::first();
+        $all = User::all();
+        $last = $all->last();
+
+        return view('query.first-last', compact('title', 'first', 'last'));
+    }
+
 }
