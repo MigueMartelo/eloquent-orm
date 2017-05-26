@@ -29,5 +29,10 @@
                 Primer y último registro (FIRST - LAST)
             </a>
         </li>
+        <li>
+            <a href="{{ route('paginate') }}">
+                Paginación de usuarios
+            </a>
+        </li>
     </ul>
 </li>
